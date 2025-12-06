@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MedScope AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">MedScope AI</div>
+    <div class="nav-links">
+      <button onclick="goHome()">Home</button>
+      <button onclick="showInsights()">Insights</button>
+      <button onclick="showIndustries()">Industries</button>
+      <button onclick="showAbout()">About Us</button>
+    </div>
+  </nav>
+
+  <header>
+    <h1>MedScope AI – Pharma Research Assistant</h1>
+    <p>Your Intelligent Medicine & Molecule Research Companion</p>
+  </header>
+
+  <!-- SEARCH -->
+  <section class="search-section">
+    <div class="search-wrapper">
+      <input id="searchBox" class="search-box" placeholder="Search Molecule, Drug or Indication..." />
+      <button class="search-btn" onclick="searchMolecule()">Analyze</button>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <main id="result" class="result-section"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
